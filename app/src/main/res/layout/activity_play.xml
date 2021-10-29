@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/taskDescTV"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    android:textSize="20dp"
+    android:padding="10dp"
+    android:clickable="false"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    app:strokeColor="@color/dark_brown"
+    app:strokeWidth="2dp"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="-- OR --" />
+
+    <TextView
+        android:id="@+id/nrOfShotsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drink 1 shot"
+        android:textColor="?colorOnPrimary"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next →"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
