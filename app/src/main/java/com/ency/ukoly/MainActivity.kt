@@ -10,8 +10,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        setTheme(R.style.Theme_Ukoly)
+//        val theme = "day"
+
         val tasksBtn = findViewById<Button>(R.id.tasksBtn)
         val playBtn = findViewById<Button>(R.id.playBtn)
+//        val themeBtn = findViewById<Button>(R.id.themeBtn)
 
         tasksBtn.setOnClickListener {
             val intent = Intent(this, TasksActivity::class.java)
@@ -19,8 +23,17 @@ class MainActivity : AppCompatActivity() {
         }
 
         playBtn.setOnClickListener {
-
+            val intent = Intent(this, PlayActivity::class.java)
+            startActivity(intent)
         }
 
+//        themeBtn.setOnClickListener {
+//            if (theme == "day") {
+//                setTheme(R.style.Theme_Ukoly)
+//
+//            } else if (theme == "night") {
+//                setTheme(R.style.DarkTheme)
+//            }
+//        }
     }
 }
